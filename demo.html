@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Workflow App - Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .demo-canvas {
+            width: 800px;
+            height: 800px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            color: #333;
+        }
+        .demo-canvas h2 {
+            margin-bottom: 20px;
+        }
+        .demo-canvas ul {
+            text-align: left;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Filter Workflow App</h1>
+            <p class="subtitle">Create stunning visuals for album covers and social media</p>
+        </header>
+
+        <div class="main-content">
+            <aside class="control-panel">
+                <section class="panel-section">
+                    <h2>Template</h2>
+                    <div class="template-buttons">
+                        <button class="template-btn active">Single Image</button>
+                        <button class="template-btn">Grid (2x2)</button>
+                        <button class="template-btn">Video/GIF</button>
+                    </div>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Upload Images</h2>
+                    <input type="file" accept="image/*" multiple disabled>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">
+                        (Demo mode - see main app)
+                    </p>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Filters</h2>
+                    <div class="filter-list">
+                        <label class="filter-item">
+                            <input type="checkbox" disabled>
+                            <span>Grayscale</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" disabled>
+                            <span>Invert</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" disabled>
+                            <span>Blur</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" disabled>
+                            <span>Posterize</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" disabled>
+                            <span>Threshold</span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Actions</h2>
+                    <button class="action-btn" disabled>Apply Filters</button>
+                    <button class="action-btn secondary" disabled>Reset</button>
+                    <button class="action-btn" disabled>Export Image</button>
+                </section>
+            </aside>
+
+            <main class="canvas-area">
+                <div class="demo-canvas">
+                    <h2>🎨 Filter Workflow App Demo</h2>
+                    <ul>
+                        <li><strong>Three Templates:</strong> Single Image, Grid (2x2), Video/GIF</li>
+                        <li><strong>Five Filters:</strong> Grayscale, Invert, Blur, Posterize, Threshold</li>
+                        <li><strong>Upload Images:</strong> Drag and drop or select files</li>
+                        <li><strong>Real-time Preview:</strong> See changes instantly</li>
+                        <li><strong>Export:</strong> Save as PNG for your projects</li>
+                    </ul>
+                    <p style="margin-top: 30px; font-size: 1.1rem;">
+                        📖 See <strong>README.md</strong> for full instructions
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
