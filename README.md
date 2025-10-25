@@ -22,6 +22,10 @@ A web-based application for creating stunning visual content with p5.js filters 
 - A modern web browser (Chrome, Firefox, Safari, or Edge)
 - No installation required!
 
+### Quick Start
+
+**🚀 New users?** See [QUICKSTART.md](QUICKSTART.md) for a 5-minute tutorial!
+
 ### Running the App
 
 1. Clone this repository:
@@ -49,6 +53,13 @@ A web-based application for creating stunning visual content with p5.js filters 
 4. **Adjust Parameters**: Fine-tune blur amount, posterize levels, or threshold values
 5. **Apply**: Click "Apply Filters" to see the results
 6. **Export**: Save your creation with the "Export Image" button
+
+## Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes
+- **[EXAMPLES.md](EXAMPLES.md)** - Practical usage examples for music projects
+- **[DEVELOPER.md](DEVELOPER.md)** - Architecture and development guide
+- **README.md** - This file (overview and reference)
 
 ## Project Structure
 
