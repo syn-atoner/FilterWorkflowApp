@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Workflow App - p5.js Visual Creator</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.min.js">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Filter Workflow App</h1>
+            <p class="subtitle">Create stunning visuals for album covers and social media</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Control Panel -->
+            <aside class="control-panel">
+                <section class="panel-section">
+                    <h2>Template</h2>
+                    <div class="template-buttons">
+                        <button class="template-btn active" data-template="single">Single Image</button>
+                        <button class="template-btn" data-template="grid">Grid (2x2)</button>
+                        <button class="template-btn" data-template="video">Video/GIF</button>
+                    </div>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Upload Images</h2>
+                    <input type="file" id="imageUpload" accept="image/*" multiple>
+                    <div id="uploadedImages" class="uploaded-list"></div>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Filters</h2>
+                    <div class="filter-list">
+                        <label class="filter-item">
+                            <input type="checkbox" data-filter="grayscale">
+                            <span>Grayscale</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" data-filter="invert">
+                            <span>Invert</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" data-filter="blur">
+                            <span>Blur</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" data-filter="posterize">
+                            <span>Posterize</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" data-filter="threshold">
+                            <span>Threshold</span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Parameters</h2>
+                    <div class="parameter-controls">
+                        <label>
+                            Blur Amount:
+                            <input type="range" id="blurAmount" min="1" max="10" value="3" step="1">
+                            <span id="blurValue">3</span>
+                        </label>
+                        <label>
+                            Posterize Levels:
+                            <input type="range" id="posterizeLevels" min="2" max="20" value="5" step="1">
+                            <span id="posterizeValue">5</span>
+                        </label>
+                        <label>
+                            Threshold:
+                            <input type="range" id="thresholdValue" min="0" max="1" value="0.5" step="0.01">
+                            <span id="thresholdDisplay">0.5</span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="panel-section">
+                    <h2>Actions</h2>
+                    <button id="applyFilters" class="action-btn">Apply Filters</button>
+                    <button id="resetFilters" class="action-btn secondary">Reset</button>
+                    <button id="exportImage" class="action-btn">Export Image</button>
+                </section>
+            </aside>
+
+            <!-- Canvas Area -->
+            <main class="canvas-area">
+                <div id="canvasContainer"></div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="filters/filterEngine.js"></script>
+    <script src="js/sketch.js"></script>
+</body>
+</html>

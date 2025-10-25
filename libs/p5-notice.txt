@@ -1,0 +1,19 @@
+p5.js Library
+=============
+
+Due to environment restrictions, the p5.js library could not be downloaded automatically.
+
+To use this application, you need to manually add p5.js:
+
+Option 1: Download p5.js locally
+---------------------------------
+1. Visit https://p5js.org/download/
+2. Download the p5.min.js file
+3. Place it in the libs/ directory
+4. Update index.html to point to: <script src="libs/p5.min.js"></script>
+
+Option 2: Use online CDN (recommended for local development)
+-------------------------------------------------------------
+The index.html currently uses jsdelivr CDN which works in most environments.
+
+If CDN is blocked in your environment, use Option 1 above.
